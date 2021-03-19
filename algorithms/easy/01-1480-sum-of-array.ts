@@ -18,7 +18,7 @@ runningSum(input);
 // Output: [1,3,6,10]
 
 
-// History of performance improvements 
+// History of performance improvements
 // Runtime: 96 ms, faster than 25.92% of TypeScript online submissions for Running Sum of 1d Array.
 // Memory Usage: 40.8 MB, less than 14.14% of TypeScript online submissions for Running Sum of 1d Array.
 
