@@ -4,7 +4,7 @@
     console.log('-- -- -- startPoint', startPoint);
     
     const res: number[] = [];
-    for (let i = startPoint; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
       if (num === arr[i]) {
         res.push(i);
       }
@@ -18,7 +18,7 @@
 
 
 function groupThePeople(groupSizes: number[]): number[][] {
-  const res: number[][] = [[]];
+  const res: number[][] = [];
   let startPoint: number = 0;
 
   for (let i = 0; i < groupSizes.length; i++) {
@@ -26,7 +26,8 @@ function groupThePeople(groupSizes: number[]): number[][] {
     const tmp = findIndexes(groupSizes, element, startPoint);
     res.push(tmp);
     if (tmp.length >= element) {
-      startPoint = tmp[tmp.length - 1];
+      startPoint = tmp.length;
+      // startPoint = tmp[tmp.length];
     }
     console.log('-- -- -- tmp', tmp);
   }
