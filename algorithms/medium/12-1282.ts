@@ -23,8 +23,6 @@ function groupThePeople(groupSizes: number[]): number[][] {
 
 
   const res: number[][] = [];
-  let startPoint: number = 0;
-
   const doneNumbers: number[] = [];
 
   for (let i = 0; i < groupSizes.length; i++) {
@@ -35,8 +33,6 @@ function groupThePeople(groupSizes: number[]): number[][] {
     if (numofIncludes === 0) {
       tmp = findIndexes(groupSizes, element);
       res.push(tmp);
-    } else if (numofIncludes > 0 && numofIncludes < element) {
-
     } else if (numofIncludes === element) {
       tmp = findIndexes(groupSizes, element, i);
       res.push(tmp);
