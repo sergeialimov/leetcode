@@ -3,7 +3,7 @@ function shuffle(nums: number[], n: number): number[] {
   const secondHalf = nums.slice(n);
 
   const res: number[] = [];
-  for (let i = 0; i < N; i++) {
+  for (let i = 0; i < n; i++) {
     res.push(firstHalf[i]);
     res.push(secondHalf[i]);
   }

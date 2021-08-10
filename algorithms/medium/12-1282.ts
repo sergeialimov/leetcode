@@ -44,11 +44,18 @@ function groupThePeople(groupSizes: number[]): number[][] {
   return res;
 };
 const group = [3, 4, 3, 3, 4, 4, 3, 4, 3, 3];
-// const group = [2, 2, 1, 1, 1, 1, 1, 1];
-// const group = [ 2, 1, 3, 3, 3, 2 ];
-// const group = [ 3, 3, 3, 3, 3, 1, 3 ];
 const expected = [ [ 0, 2, 3 ], [ 1, 4, 5, 7 ], [ 6, 8, 9 ] ];
 console.log('-- -- -- input\n', JSON.stringify(group).split(',').join(', '), '\n');
 console.log('-- -- -- expected\n', JSON.stringify(expected).split(',').join(', '), '\n');
 
 groupThePeople(group);
+
+
+
+
+
+
+
+// const group = [2, 2, 1, 1, 1, 1, 1, 1];
+// const group = [ 2, 1, 3, 3, 3, 2 ];
+// const group = [ 3, 3, 3, 3, 3, 1, 3 ];

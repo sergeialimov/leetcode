@@ -8,7 +8,7 @@ function removeDuplicates(nums: number[]): number {
   // console.log('-- -- -- nums', nums);
   
   return nums.length;
-};bp 
+};
 
 const res = removeDuplicates([1,1,2]);
 // const res = removeDuplicates([0,0,1,1,1,2,2,3,3,4]);
