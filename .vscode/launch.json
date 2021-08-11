@@ -8,7 +8,7 @@
       "request": "launch",
       "cwd": "${workspaceRoot}",
       "runtimeArgs": ["-r", "ts-node/register"],
-      "args": ["${workspaceRoot}/algorithms/array/03-rotate-array.ts"]
+      "args": ["${workspaceRoot}/algorithms/array/04-contains-duplicate.ts"]
     }
   ]
 }
