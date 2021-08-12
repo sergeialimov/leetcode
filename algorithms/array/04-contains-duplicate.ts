@@ -12,7 +12,7 @@ function containsDuplicate(nums: number[]): boolean {
     }
     arr.push(x);
   });
-  return res;
+  return false;
 };
 
 const res = containsDuplicate([ 1, 2, 3, 1 ]);
