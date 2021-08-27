@@ -9,7 +9,7 @@
       "cwd": "${workspaceRoot}",
       "runtimeArgs": ["-r", "ts-node/register"],
       // "args": ["${workspaceRoot}/test.ts"]
-      "args": ["${workspaceRoot}/algorithms/array/06-intersection.ts"]
+      "args": ["${workspaceRoot}/algorithms/array/07-plus-one.ts"]
     }
   ]
 }
