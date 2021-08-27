@@ -15,11 +15,10 @@ function intersect(nums1: number[], nums2: number[]): number[] {
 
   for (const key in counts1) {
     if (Object.prototype.hasOwnProperty.call(counts1, key)) {
-      const el = counts1[key];
+      const el1 = counts1[key];
+      const el2 = counts2[key];
 
-      if (counts2[key]) {
-        intersections.push(Math.min(counts1[key], counts2[key]));
-      }
+      counts2[key] && intersections.push(Math.min(el1, el2));
     }
   }
 
