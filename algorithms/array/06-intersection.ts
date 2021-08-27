@@ -1,6 +1,13 @@
 function intersect(nums1: number[], nums2: number[]): number[] {
   const intersections = [];
 
+  /**
+   * returns
+   * {
+   *   1: 2,
+   *   2: 2,
+   * }
+   */
   const countArrItems = (arr) => {
     const counts = {}
     arr.map((x) => {
@@ -13,26 +20,30 @@ function intersect(nums1: number[], nums2: number[]): number[] {
   const counts1 = countArrItems(nums1);
   const counts2 = countArrItems(nums2);
 
-  for (const key in counts1) {
+  /**
+   * 
+   */
+  for (const key in counts1) { // key: 1
     if (Object.prototype.hasOwnProperty.call(counts1, key)) {
-      const el1 = counts1[key];
-      const el2 = counts2[key];
+      const valueArr1 = counts1[key];
+      const valueArr2 = counts2[key];
 
-      counts2[key] && intersections.push(Math.min(el1, el2));
+      // number of intersections 
+      const num = Math.min(valueArr1, valueArr2);
+      // if key appears in both arrays, push 
+      if (valueArr2) {
+        for (let i = 0; i < num; i++) {
+          intersections.push(key);
+        }
+      }
     }
   }
 
+  console.log('-- -- -- intersections', intersections);
 
   return intersections;
 };
 
-intersect([ 1, 2, 2, 1], [2, 2]);
+intersect([ 1, 2, 2, 1, 3], [2, 2, 3]);
 
 
-
-// nums1.map((x) => {
-//   if (nums2.includes(x)) {
-//     obj[x]['num'] += 1;
-//   }
-// });
-// obj[x]['indexes'].push(nums2.indexOf(x));
