@@ -106,3 +106,6 @@ dist
 
 package-lock.json
 test.ts
+test2.ts
+test.js
+test2.js
