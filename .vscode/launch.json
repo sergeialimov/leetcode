@@ -10,7 +10,7 @@
       "runtimeArgs": ["-r", "ts-node/register"],
       // "args": ["${workspaceRoot}/test.ts"]
       // "args": ["${workspaceRoot}/algorithms/array/11-rotate-image.ts"]
-      "args": ["${workspaceRoot}/algorithms/strings/2-reverse-integer.ts"]
+      "args": ["${workspaceRoot}/algorithms/strings/3-first-uniq.ts"]
     }
   ]
 }
