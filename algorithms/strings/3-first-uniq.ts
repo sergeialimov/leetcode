@@ -1,13 +1,20 @@
-import { strict as assert } from 'assert';
-
 function firstUniqChar(s: string): number {
-  const splitted = s.split('');
-  return 0;
+  const arr = s.split('');
+  const set = new Set(arr);
+  const arr2 = Array.from(set);
+  let res = -1;
+
+  for (let i = 0; i < arr2.length; i++) {
+    const item = arr2[i];
+    const index = arr.indexOf(item);
+    arr[index] = null;
+    if (!arr.includes(item)) { // check for uniqueness
+      res = index;
+      return index;
+    }
+  }
+  return res;
 };
 
-
-const input = 'leetcode';
-const expected = 0;
-
-const res = firstUniqChar(input);
-assert(expected === res);
+const res = firstUniqChar('loveleetcode')
+console.log('-- res', res);
