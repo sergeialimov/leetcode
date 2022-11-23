@@ -1,17 +1,13 @@
 {
-  "name": "leetcode",
+  "name": "problems",
   "version": "1.0.0",
-  "description": "leetcode tasks",
-  "main": "/algorithms",
+  "description": "Problems solving",
   "dependencies": {
     "ts-node": "^10.2.0",
     "typescript": "^4.2.3"
   },
   "devDependencies": {
     "assert": "^2.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,10 +17,5 @@
     "leetcode",
     "typescript"
   ],
-  "author": "Sergei Alimov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sergeialimov/leetcode/issues"
-  },
-  "homepage": "https://github.com/sergeialimov/leetcode#readme"
+  "author": "Sergei Alimov"
 }
