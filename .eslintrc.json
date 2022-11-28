@@ -1,0 +1,204 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": { "typescript": {} }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+//        "plugin:@nrwl/nx/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:node/recommended",
+        "plugin:import/recommended"
+      ],
+      "parserOptions": { "project": "./tsconfig.*?.json" },
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        // Nx's Code Quality rules
+//        "@nrwl/nx/enforce-module-boundaries": [
+//          "error",
+//          {
+//            "enforceBuildableLibDependency": true,
+//            "allow": [],
+//            "depConstraints": [
+//              { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
+//            ]
+//          }
+//        ],
+
+        // Google Typescript's Code Quality rules
+        "block-scoped-var": "error",
+        "eqeqeq": "error",
+        "no-var": "error",
+        "prefer-const": ["error", { "destructuring": "all" }],
+        "no-restricted-properties": [
+          "error",
+          {
+            "object": "describe",
+            "property": "only"
+          },
+          {
+            "object": "it",
+            "property": "only"
+          }
+        ],
+        "@typescript-eslint/no-non-null-assertion": "error",
+        "@typescript-eslint/no-use-before-define": "error",
+        "no-warning-comments": ["warn", { "terms": ["fix", "fixme", "todo"] }],
+        "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/no-var-requires": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/ban-types": "error",
+        "camelcase": [
+          "error",
+          { "ignoreGlobals": true, "allow": ["^UNSAFE_"] }
+        ],
+        "node/no-missing-import": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+        // this is to allow function overloading
+        "no-dupe-class-members": "off",
+        "@typescript-eslint/no-dupe-class-members": ["error"],
+        "require-atomic-updates": "error",
+
+        // Firefly Code Quality rules
+        "@typescript-eslint/no-parameter-properties": [
+          "error",
+          { "allows": ["private readonly", "protected readonly"] }
+        ],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/no-shadow": ["warn"],
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "vars": "local",
+            "args": "none",
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "no-underscore-dangle": "error",
+        "no-useless-escape": "error",
+        "consistent-return": "error",
+        "prefer-arrow-callback": "off",
+        "no-console": "off",
+        "no-cond-assign": "error",
+        "no-confusing-arrow": "error",
+        "class-methods-use-this": "off",
+        "no-else-return": ["error", { "allowElseIf": true }],
+        "no-useless-return": "error",
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+        "import/no-absolute-path": ["error"],
+        "import/no-named-as-default": "off",
+        "@typescript-eslint/consistent-type-definitions": ["warn", "interface"],
+
+        // Formatting rules
+        "@typescript-eslint/space-before-function-paren": ["error", "always"],
+        "@typescript-eslint/type-annotation-spacing":"error",
+        "@typescript-eslint/quotes": [
+          "error",
+          "single",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "@typescript-eslint/indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1,
+            "VariableDeclarator": 1,
+            "outerIIFEBody": 1,
+            "MemberExpression": 1,
+            "StaticBlock": {"body": 1},
+            "ArrayExpression": 1,
+            "FunctionDeclaration": {
+              "parameters": 1,
+              "body": 1
+            },
+            "FunctionExpression": {
+              "parameters": 1,
+              "body": 1
+            },
+            "CallExpression": {
+              "arguments": 1
+            },
+            "ignoredNodes": ["PropertyDefinition"]
+          }
+        ],
+        "@typescript-eslint/brace-style": ["error", "1tbs"],
+        "brace-style": "off",
+        "indent": "off",
+        "function-paren-newline": ["error", "multiline-arguments"],
+        "arrow-parens": ["error", "always"],
+        "arrow-body-style": ["error", "as-needed"],
+        "array-bracket-spacing": [
+          "error",
+          "always",
+          { "arraysInArrays": false, "objectsInArrays": false }
+        ],
+        "curly": ["error", "all"],
+        "object-curly-newline": [
+          "error",
+          { "minProperties": 5, "multiline": true }
+        ],
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+        "object-curly-spacing": [
+          "error",
+          "always",
+          { "objectsInObjects": false }
+        ],
+        "comma-dangle": [
+          "error",
+          {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "always-multiline"
+          }
+        ],
+        "max-len": [
+          "error",
+          {
+            "code": 100,
+            "comments": 120,
+            "ignoreStrings": true,
+            "ignoreUrls": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreComments": true
+          }
+        ],
+
+        // Base JS rules that need to be disabled to let @typescript/ rules work
+        "quotes": "off",
+        "space-before-function-paren": "off",
+        "no-unused-vars": "off",
+        "no-shadow": "off",
+        "no-use-before-define": "off",
+        "no-empty-function": "off"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+//      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
+    },
+    {
+      "files": ["*"],
+      "rules": {
+        "eol-last": "error",
+        "no-trailing-spaces": "error",
+        "no-multiple-empty-lines": [
+          "error",
+          { "max": 1, "maxBOF": 0, "maxEOF": 0 }
+        ]
+      }
+    }
+  ]
+}
