@@ -21,9 +21,7 @@ const handleAtmRequest = (sum) => {
   return res;
 }
 
-
 // handleAtmRequest(-1);
 // handleAtmRequest(3);
 const res = handleAtmRequest(375);
 console.log(res)
-
