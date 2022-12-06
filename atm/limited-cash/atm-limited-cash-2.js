@@ -19,16 +19,15 @@ const getBanknotes = (sum) => {
     };
   });
 
-  const banknotesArr = banknotes
+  // get array of denominations
+  const denominations = banknotes
     .map((item) => +Object.keys(item)[0])
     .sort((a, b) => b - a);
 
   // check if there's enough money
   let availableSum = 0;
 
-  banknotesArr.forEach((item) => {
-    availableSum += Number(item) * banknotesObj[item];
-  });
+  denominations.forEach((item) => availableSum += item * banknotesObj[item]);
 
   if (availableSum < sum) {
     console.log('There\'s not enough money');
@@ -37,7 +36,7 @@ const getBanknotes = (sum) => {
 
   // Get money
   const resObj = {};
-  banknotesArr.forEach((item) => {
+  denominations.forEach((item) => {
     while (sum > item && banknotesObj[item] > 0) {
       resObj[item] = resObj[item] > 0 ? ++resObj[item] : 1;
       banknotesObj[item]--;
