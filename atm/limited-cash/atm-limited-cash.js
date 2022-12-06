@@ -1,4 +1,4 @@
-const handleAtmRequest = (sum) => {
+const handleAtmRequest = (sum, availableCash) => {
   if (sum <= 0) {
     console.log('Please input an amount greater than zero');
     return;
@@ -13,8 +13,9 @@ const handleAtmRequest = (sum) => {
   const res = [];
 
   denominations.forEach((denomination) => {
-    while (sum >= denomination) {
+    while (sum >= denomination && availableCash[denomination] > 0) {
       res.push(denomination);
+      availableCash[denomination]--;
       sum -= denomination;
     }
   });
@@ -23,5 +24,6 @@ const handleAtmRequest = (sum) => {
 
 // handleAtmRequest(-1);
 // handleAtmRequest(3);
-const res = handleAtmRequest(375);
-console.log(res)
+const res = handleAtmRequest(375, { 100: 5, 50: 3, 20: 20, 10: 5, 5: 1 });
+// expected res [100,100,100,50,20,5]
+console.log(res);
