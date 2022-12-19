@@ -1,3 +1,8 @@
+/**
+ * Version 2
+ * Real code interview question
+ */
+
 const banknotes = [
   { 1: 10 },
   { 2: 2 },
