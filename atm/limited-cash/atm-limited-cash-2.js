@@ -35,7 +35,7 @@ const getBanknotes = (sum) => {
   denominations.forEach((item) => availableSum += item * banknotesObj[item]);
 
   if (availableSum < sum) {
-    console.log('There\'s not enough money');
+    console.log('There\'s not enough money in the ATM');
     return;
   }
 
