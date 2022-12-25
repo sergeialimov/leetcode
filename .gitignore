@@ -112,3 +112,4 @@ test2.js
 .vscode
 yarn.lock
 out
+.DS_Store
