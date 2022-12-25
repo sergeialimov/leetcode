@@ -53,8 +53,13 @@ const handleAtmRequest = (requiredSum, availableCash) => {
 }
 
 // const params = { required: 240, avaialable: { 100: 5, 80: 3, 20: 1 }, expected: [80, 80, 80]};
-// const params = { required: 375, avaialable: { 100: 5, 50: 3, 20: 20, 10: 5, 5: 1 }, expected: [100,100,100,50,20,5]};
-const params = { required: 800, avaialable: {100: 5, 50: 3}, expected: 'There\'s not enough money in the ATM' };
+const params = { required: 375, avaialable: { 100: 5, 50: 3, 20: 20, 10: 5, 5: 1 }, expected: [100,100,100,50,20,5]};
+// const params = { required: 800, avaialable: {100: 5, 50: 3}, expected: 'There\'s not enough money in the ATM' };
 
-const res = handleAtmRequest(params.required, params.avaialable);
-console.log(res)
+try {
+  const res = handleAtmRequest(params.required, params.avaialable);
+  console.log(res);
+} catch (e) {
+  console.log(e.message);
+}
+
