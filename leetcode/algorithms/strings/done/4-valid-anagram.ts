@@ -5,6 +5,10 @@ function isAnagram (s: string, t: string): boolean {
   // split, sort, compare
 }
 
+function isAnagram2 (s: string, t: string): boolean {
+  // assign to object, count appearences
+}
+
 const res = isAnagram('anagram', 'nawaram');
 
 console.log(res);
