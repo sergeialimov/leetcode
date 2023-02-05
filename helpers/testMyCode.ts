@@ -1,4 +1,11 @@
-export const testMyCode = (fun, tests) => {
+interface Test {
+  param: string,
+  expected: number,
+}
+
+type Fun = (string) => number;
+
+export const testMyCode = (fun: Fun, tests: Test[]): void => {
   let allTrue = true;
   tests.forEach((x) => {
     const res = fun(x.param);
