@@ -3,15 +3,16 @@ interface Test {
   expected: number,
 }
 
-type Fun = (string) => number;
+type Fun = (x: string) => number;
 
-export const testMyCode = (fun: Fun, tests: Test[]): void => {
+export function testMyCode (fun: Fun, tests: Test[]): void {
   let allTrue = true;
   tests.forEach((x) => {
     const res = fun(x.param);
     if (res !== x.expected) {
       console.error(
-        `💩 Err with param: '${x.param}' : expected: ${x.expected} : actual: ${res}`);
+        `💩 Err with param: '${x.param}' : expected: ${x.expected} : actual: ${res}`,
+      );
       allTrue = false;
     } else {
       console.log(`👍 No error with param: '${x.param}' actual/expected: ${x.expected}`);
