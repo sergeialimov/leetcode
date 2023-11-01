@@ -9,7 +9,8 @@
     "typescript": ">=4.4"
   },
   "scripts": {
-    "lint": "npx **/*.js"
+    "lint-old": "npx **/*.ts",
+    "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.1",

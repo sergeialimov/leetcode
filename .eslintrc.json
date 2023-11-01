@@ -63,12 +63,12 @@
         "require-atomic-updates": "error",
 
         // Code Quality rules
-        "@typescript-eslint/no-parameter-properties": [
-          true,
-          {
-            "allow": ["public"]
-          }
-        ],
+        // "@typescript-eslint/no-parameter-properties": [
+        //   true,
+        //   {
+        //     "allow": ["public"]
+        //   }
+        // ],
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/explicit-module-boundary-types": "error",
         "@typescript-eslint/no-shadow": ["warn"],
