@@ -11,7 +11,8 @@
   "scripts": {
     "lint-old": "npx **/*.ts",
     "lint": "eslint . --ext .ts",
-    "fix-all": "eslint --fix '**/*.{js,jsx,ts,tsx}'"
+    "fix-all": "eslint --fix '**/*.{js,jsx,ts,tsx}'",
+    "lint:file": "eslint"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.1",

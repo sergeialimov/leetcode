@@ -1,4 +1,4 @@
-function removeDuplicates (nums: number[]): number {
+export function removeDuplicates (nums: number[]): number {
   for(let i: number = 0; i < nums.length; i++) {
     if (nums[i + 1] === nums[i]) {
       nums.splice(i, 1);
