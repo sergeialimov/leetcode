@@ -1,5 +1,3 @@
-import { strict as assert } from 'assert';
-
 /**
  Do not return anything, modify matrix in-place instead.
  */
@@ -10,15 +8,15 @@ import { strict as assert } from 'assert';
 function rotate (matrix: number[][]): void {
   for (let i = matrix.length-1; i >= 0; i--) {
     const el = matrix[i];
-    let countOut = 0;
-    let countIn = 0;
+    // let countOut = 0;
+    // let countIn = 0;
     for (let m = 0; m <= el.length-1; m++) {
-      const subEl = matrix[i][m];
+      // const subEl = matrix[i][m];
       // matrixNew[countOut][countIn] = subEl;
-      countOut++;
+      // countOut++;
     }
-    countOut = 0;
-    countIn++;
+    // countOut = 0;
+    // countIn++;
   };
 }
 

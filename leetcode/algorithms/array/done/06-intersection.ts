@@ -8,6 +8,7 @@ function intersect (nums1: number[], nums2: number[]): number[] {
    *   2: 2,
    * }
    */
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   const countArrItems = (arr) => {
     const counts = {}
     arr.map((x) => {

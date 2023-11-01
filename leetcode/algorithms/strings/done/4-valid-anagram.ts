@@ -12,5 +12,6 @@ function isAnagram2 (s: string, t: string): boolean {
 }
 
 const res = isAnagram('anagram', 'nawaram');
+const res = isAnagram2('anagram', 'nawaram');
 
 console.log(res);

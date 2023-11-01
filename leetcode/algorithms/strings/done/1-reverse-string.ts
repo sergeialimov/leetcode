@@ -1,5 +1,3 @@
-import { strict as assert } from 'assert';
-
 function reverseString (s: string[]): void {
   for (let i = 0; i < s.length / 2; i++) {
     const first = s[i];
@@ -20,7 +18,7 @@ const expected = [ 'H','a','n','n','a','h' ];
 // const expected = ["o","l","l","e","h"];
 
 console.log('-- -- -- input 1', input);
-const res =  reverseString(input);
-console.log('-- -- -- input 2', input);
+const res = reverseString(input);
+console.log('-- -- -- input 2', res);
 
-// assert(input === expected)
+assert(input === expected)

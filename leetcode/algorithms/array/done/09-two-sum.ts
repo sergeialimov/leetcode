@@ -1,3 +1,4 @@
+// eslint-disable-next-line consistent-return
 function twoSum (nums: number[], target: number): number[] {
   const indexes = [];
   const limit = nums.length;

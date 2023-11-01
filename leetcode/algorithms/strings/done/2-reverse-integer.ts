@@ -1,6 +1,5 @@
-import { strict as assert } from 'assert';
-function reverse (x: number): number {
-  const s = x.toString();
+export function reverse (x: number): number {
+  const s = x.tosString();
   const sArr = s.split('');
   const isNegative = sArr[0] === '-';
   if(isNegative) {

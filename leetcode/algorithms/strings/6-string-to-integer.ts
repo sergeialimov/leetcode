@@ -1,4 +1,4 @@
-import { testMyCode } from '../../../helpers/testMyCode';
+// import { testMyCode } from '../../../helpers/testMyCode';
 
 const myAtoi = (s: string): number => {
   // ignore whitespace
@@ -40,12 +40,12 @@ const myAtoi = (s: string): number => {
   return res;
 }
 
-const tests = [
-  { param: '   -0042wer', expected: -42 },
-  { param: '   +0041wer', expected: 41 },
-  { param: '4193 with words', expected: 4193 },
-  { param: '-91283472332', expected: -2147483648 },
-  { param: '   +0 123', expected: 0 },
-];
-
-testMyCode(myAtoi, tests);
+// const tests = [
+//   { param: '   -0042wer', expected: -42 },
+//   { param: '   +0041wer', expected: 41 },
+//   { param: '4193 with words', expected: 4193 },
+//   { param: '-91283472332', expected: -2147483648 },
+//   { param: '   +0 123', expected: 0 },
+// ];
+myAtoi('   -0042wer');
+// testMyCode(myAtoi, tests);

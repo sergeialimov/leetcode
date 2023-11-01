@@ -1,3 +1,4 @@
+// eslint-disable-next-line consistent-return
 function singleNumber (nums: number[]): number {
   const arr = nums.sort((a, b) => a - b);
   for (let i = 0; i < arr.length; i+=2) {
