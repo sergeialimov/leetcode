@@ -10,7 +10,8 @@
   },
   "scripts": {
     "lint-old": "npx **/*.ts",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "fix-all": "eslint --fix '**/*.{js,jsx,ts,tsx}'"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.1",

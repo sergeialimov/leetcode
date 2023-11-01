@@ -1,4 +1,4 @@
-function firstUniqChar(s: string): number {
+function firstUniqChar (s: string): number {
   const arr = s.split('');
   const set = new Set(arr);
   const arr2 = Array.from(set);

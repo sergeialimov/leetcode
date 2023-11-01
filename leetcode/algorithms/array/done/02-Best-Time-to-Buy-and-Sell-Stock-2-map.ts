@@ -1,6 +1,6 @@
 export {}
 
-function maxProfit(prices: number[]): number {
+function maxProfit (prices: number[]): number {
   let profit = 0;
   let diff;
 
@@ -18,7 +18,6 @@ function maxProfit(prices: number[]): number {
 
   return profit;
 };
-
 
 const res = maxProfit([ 7, 1, 5, 3, 6, 4 ]);
 console.log('-- -- -- res', res);

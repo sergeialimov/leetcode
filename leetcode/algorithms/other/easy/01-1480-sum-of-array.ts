@@ -1,4 +1,4 @@
-function runningSum(nums: number[]): number[] {
+function runningSum (nums: number[]): number[] {
   const arr: number[] = [ ];
   let sum: number = 0;
 
@@ -10,13 +10,11 @@ function runningSum(nums: number[]): number[] {
   return arr;
 };
 
-
 const input = [ 1, 2, 3, 4 ];
 
 runningSum(input);
 
 // Output: [1,3,6,10]
-
 
 // History of performance improvements
 // Runtime: 96 ms, faster than 25.92% of TypeScript online submissions for Running Sum of 1d Array.

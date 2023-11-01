@@ -1,7 +1,6 @@
-function defangIPaddr(address: string): string {
+function defangIPaddr (address: string): string {
   return address.replace(/[.]/g, '[.]');
 };
-
 
 const input: string = '1.1.1.1';
 console.log('-- -- -- ', defangIPaddr(input));

@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-function reverse(x: number): number {
+function reverse (x: number): number {
   const s = x.toString();
   const sArr = s.split('');
   const isNegative = sArr[0] === '-';
@@ -19,7 +19,7 @@ function reverse(x: number): number {
     // assign last to first
     sArr[0 + i] = last
   }
-  
+
   const num = Number(sArr.join(''));
   const res = isNegative ? num * -1 : num;
   if (res > 2147483648 - 1 || res < -2147483648) {

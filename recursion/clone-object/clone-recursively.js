@@ -26,4 +26,3 @@ const deepClone = (obj) => {
 const clone = deepClone(obj);
 
 console.log(clone);
-

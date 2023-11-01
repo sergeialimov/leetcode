@@ -1,4 +1,4 @@
-function shuffle(nums: number[], n: number): number[] {
+function shuffle (nums: number[], n: number): number[] {
   const firstHalf = nums.slice(0, n);
   const secondHalf = nums.slice(n);
 
@@ -11,4 +11,4 @@ function shuffle(nums: number[], n: number): number[] {
   return res;
 };
 
-shuffle([1,2,3,4,4,3,2,1], 4);
+shuffle([ 1,2,3,4,4,3,2,1 ], 4);

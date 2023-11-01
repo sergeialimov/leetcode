@@ -1,4 +1,4 @@
-function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
+function kidsWithCandies (candies: number[], extraCandies: number): boolean[] {
   const max = Math.max(...candies);
   const res = candies.map((x) => {
     if (x + extraCandies >= max) {
@@ -10,7 +10,7 @@ function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
   return res;
 };
 
-kidsWithCandies([2,3,5,1,3], 3);
+kidsWithCandies([ 2,3,5,1,3 ], 3);
 
 // History of performance improvements
 // Runtime: 84 ms, faster than 75.35% of TypeScript online submissions for Kids With the Greatest Number of Candies.

@@ -1,6 +1,6 @@
 export {}
 
-function containsDuplicate(nums: number[]): boolean {
+function containsDuplicate (nums: number[]): boolean {
   if (nums.length === 0 || nums.length === 1) {
     return false;
   }

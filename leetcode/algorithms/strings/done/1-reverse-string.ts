@@ -1,6 +1,6 @@
 import { strict as assert } from 'assert';
 
-function reverseString(s: string[]): void {
+function reverseString (s: string[]): void {
   for (let i = 0; i < s.length / 2; i++) {
     const first = s[i];
     const last = s[s.length - 1 - i];
@@ -13,8 +13,8 @@ function reverseString(s: string[]): void {
   }
 };
 
-const input = ["H","a","n","n","a","h"];
-const expected = ["H","a","n","n","a","h"];
+const input = [ 'H','a','n','n','a','h' ];
+const expected = [ 'H','a','n','n','a','h' ];
 
 // const input = ["h","e","l","l","o"];
 // const expected = ["o","l","l","e","h"];

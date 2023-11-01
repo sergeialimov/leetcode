@@ -7,12 +7,9 @@ for (const num of nums) {
 }
 return result;
 
-
-
 0^4  // 0 ^ 100 = 100
 4^1  // 100 ^ 1 =  // 5
 1^2  // 1 ^ 10 =   // 7
-7^1  // 
+7^1  //
 
 // usages of bitwise xor
-

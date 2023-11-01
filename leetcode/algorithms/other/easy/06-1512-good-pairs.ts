@@ -1,4 +1,4 @@
-function numIdenticalPairs(nums: number[]): number {
+function numIdenticalPairs (nums: number[]): number {
   let res: number = 0;
 
   for (let i = 0; i < nums.length; i++) {

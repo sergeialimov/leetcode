@@ -1,4 +1,4 @@
-function singleNumber(nums: number[]): number {
+function singleNumber (nums: number[]): number {
   const arr = nums.sort((a, b) => a - b);
   for (let i = 0; i < arr.length; i+=2) {
     const el = arr[i];

@@ -1,4 +1,4 @@
-function intersect(nums1: number[], nums2: number[]): number[] {
+function intersect (nums1: number[], nums2: number[]): number[] {
   const intersections = [];
 
   /**
@@ -21,16 +21,16 @@ function intersect(nums1: number[], nums2: number[]): number[] {
   const counts2 = countArrItems(nums2);
 
   /**
-   * 
+   *
    */
   for (const key in counts1) { // key: 1
     if (Object.prototype.hasOwnProperty.call(counts1, key)) {
       const valueArr1 = counts1[key];
       const valueArr2 = counts2[key];
 
-      // number of intersections 
+      // number of intersections
       const num = Math.min(valueArr1, valueArr2);
-      // if key appears in both arrays, push 
+      // if key appears in both arrays, push
       if (valueArr2) {
         for (let i = 0; i < num; i++) {
           intersections.push(key);
@@ -44,6 +44,4 @@ function intersect(nums1: number[], nums2: number[]): number[] {
   return intersections;
 };
 
-intersect([ 1, 2, 2, 1, 3], [2, 2, 3]);
-
-
+intersect([ 1, 2, 2, 1, 3 ], [ 2, 2, 3 ]);

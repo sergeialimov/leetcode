@@ -17,7 +17,6 @@ const handleAtmRequest = (requiredSum, availableCash) => {
     .filter((x) => availableCashCopy[x] > 0)
     .sort((a, b) => b - a)
 
-
   // check for available sum
   let availableSum = 0;
   denominations.forEach((item) => availableSum += item * availableCashCopy[item]);
@@ -62,4 +61,3 @@ try {
 } catch (e) {
   console.log(e.message);
 }
-
