@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Problems solving",
   "dependencies": {
+    "@types/node": "^20.8.10",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-node": "^11.1.0",
     "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
     "typescript": "^5.2.2"
   },
   "engines": {

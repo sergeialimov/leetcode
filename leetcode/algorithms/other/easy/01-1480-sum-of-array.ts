@@ -1,3 +1,5 @@
+export {};
+
 function runningSum (nums: number[]): number[] {
   const arr: number[] = [ ];
   let sum: number = 0;

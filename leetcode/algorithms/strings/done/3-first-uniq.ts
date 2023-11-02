@@ -16,5 +16,5 @@ function firstUniqChar (s: string): number {
   return res;
 };
 
-const res = firstUniqChar('loveleetcode')
+const res = firstUniqChar('love_leetcode')
 console.log('-- res', res);

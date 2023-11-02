@@ -1,3 +1,5 @@
+export {};
+
 function isPalindrome (s: string): boolean {
   const str = s.toLowerCase().replace(/\W|_/g, '');
   const reversed = str.split('').reverse()
