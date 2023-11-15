@@ -1,7 +1,5 @@
-/* eslint-disable no-multiple-empty-lines */
-/* eslint-disable no-trailing-spaces */
 /**
- Do not return anything, modify nums in-place instead.
+ * In the move() function, cur initially holds the first element of the array. In each iteration, next is assigned the next element in the array, and then cur is assigned to the position one step ahead. This process shifts each element to the right by one position.
  */
 function rotate (nums: number[], k: number): void {
   function move (): void {

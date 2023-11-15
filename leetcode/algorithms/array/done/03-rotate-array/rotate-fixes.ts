@@ -7,7 +7,6 @@ function rotateArray (nums: number[]): void {
     const temp = nums[startInd];
     nums[startInd] = nums[endInd];
     nums[endInd] = temp;
-
     // Move towards the middle of the array
     startInd++;
     endInd--;
