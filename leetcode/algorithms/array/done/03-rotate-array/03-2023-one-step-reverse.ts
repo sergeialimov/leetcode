@@ -27,7 +27,3 @@ rotate(nums, 20);
 console.log('-- nums', JSON.stringify(nums).split(',').join(', '));
 
 
-const nums2 = [ 1, 2, 3, 4, 5 ];
-const numsReversed = [ 5, 4, 3, 2, 1 ];
-
-
