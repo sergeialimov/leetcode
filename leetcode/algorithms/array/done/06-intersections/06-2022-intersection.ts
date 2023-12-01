@@ -13,7 +13,7 @@ function intersect (nums1: number[], nums2: number[]): number[] {
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   const countArrItems = (arr) => {
     const counts = {}
-    arr.map((x) => {
+    arr.forEach((x) => {
       counts[x] ??= 0;
       counts[x]++;
     });
