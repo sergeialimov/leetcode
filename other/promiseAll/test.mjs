@@ -1,4 +1,4 @@
-import { promiseAll } from './promiseAll.mjs'
+import { promiseAll } from './promiseAll-then.mjs'
 import assert from 'assert';
 
 const resolvedPromise1 = Promise.resolve(1);

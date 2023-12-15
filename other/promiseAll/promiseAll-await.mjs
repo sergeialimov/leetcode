@@ -1,4 +1,4 @@
-function promiseAll(promises) {
+export function promiseAll(promises) {
   if (!promises.length) {
     return Promise.resolve([]);
   }
