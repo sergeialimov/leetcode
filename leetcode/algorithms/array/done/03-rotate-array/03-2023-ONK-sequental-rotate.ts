@@ -1,6 +1,7 @@
 /**
  * In the move() function, cur initially holds the first element of the array. In each iteration, next is assigned the next element in the array, and then cur is assigned to the position one step ahead. This process shifts each element to the right by one position.
  */
+// O(n * k)
 function rotate (nums: number[], k: number): void {
   function move (): void {
     const lastEl = nums[nums.length -1];

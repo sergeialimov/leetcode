@@ -5,6 +5,7 @@
  */
 
 // The number of cycles you need to perform is typically determined by the greatest common divisor (GCD) of the array length and the rotation count k
+// O(n*k).
 function rotate1 (nums: number[], k: number): void {
   const n = nums.length;
   let j = 0;
