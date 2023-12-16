@@ -5,6 +5,10 @@
     "outDir": "out",
     "sourceMap": true,
     "moduleResolution": "NodeNext",
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "helpers/*": ["src/helpers/*"] // Map directories
+    }
   }
 }
