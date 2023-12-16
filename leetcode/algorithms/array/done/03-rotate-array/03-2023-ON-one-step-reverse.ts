@@ -1,7 +1,5 @@
-// /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable newline-per-chained-call */
-/* eslint-disable no-multiple-empty-lines */
-/* eslint-disable no-trailing-spaces */
+import { logArray } from 'helpers';
+
 function rotate (nums: number[], k: number): void {
   k %= nums.length;
   function rotateArr (arr: number[], startInd: number, endInd: number): void {
@@ -14,16 +12,19 @@ function rotate (nums: number[], k: number): void {
     }
   }
 
+  // reverse array
   rotateArr(nums, 0, nums.length -1);
+  logArray(nums, 'nums1');
+
+  // rotate
   rotateArr(nums, 0, k - 1);
+  logArray(nums, 'nums2');
+
   rotateArr(nums, k, nums.length -1);
+  logArray(nums, 'nums3');
 };
 
 // const nums = [ 1,2,3,4,5 ];
 const nums = [ 1,2,3,4,5,6,7 ];
 // const expected = [ 4,5,1,2,3 ]
-rotate(nums, 20);
-
-console.log('-- nums', JSON.stringify(nums).split(',').join(', '));
-
-
+rotate(nums, 2);
