@@ -7,13 +7,13 @@ function isAnagram (s: string, t: string): boolean {
     return false;
   }
 
-  const obj = {};
+  const count = {};
 
   for (let i = 0; i < t.length; i++) {
     count[s[i]] = (count[s[i]] || 0) + 1;
     count[t[i]] = (count[t[i]] || 0) - 1;
   }
-  return Object.values(obj).every((x) => x === 0);
+  return Object.values(count).every((x) => x === 0);
 };
 
 assert.strictEqual(isAnagram('anagram', 'nagaram'), true, 'Test 1 Failed');
