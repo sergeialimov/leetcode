@@ -1,5 +1,8 @@
 import assert from 'assert';
 
+/**
+ * Knuth-Morris-Pratt (KMP) Algorithm: This algorithm preprocesses the needle to create a longest prefix suffix (LPS) array. This preprocessing helps in skipping characters while matching, reducing the number of comparisons significantly.
+ */
 function computeLPSArray (needle): number[] {
   const lps = new Array(needle.length).fill(0);
   let length = 0;
