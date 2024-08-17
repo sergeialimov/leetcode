@@ -1,0 +1,46 @@
+[
+    {
+        "id": 0,
+        "size": 7,
+        "weight": 290,
+        "score": 1180,
+        "tomatoes": [
+            {
+                "id": 1,
+                "weight": 200,
+                "size": 5,
+                "added": true,
+                "score": 1000
+            },
+            {
+                "id": 2,
+                "weight": 90,
+                "size": 2,
+                "added": true,
+                "score": 180
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "size": 6,
+        "weight": 270,
+        "score": 900,
+        "tomatoes": [
+            {
+                "id": 3,
+                "weight": 180,
+                "size": 4,
+                "added": true,
+                "score": 720
+            },
+            {
+                "id": 4,
+                "weight": 90,
+                "size": 2,
+                "added": true,
+                "score": 180
+            }
+        ]
+    }
+]

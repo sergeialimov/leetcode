@@ -1,0 +1,195 @@
+[
+  {
+    "id": 0,
+    "score": 1380,
+    "size": 6,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 11,
+        "score": 1380,
+        "size": 6,
+        "weight": 230
+      }
+    ],
+    "weight": 230
+  },
+  {
+    "id": 1,
+    "score": 1320,
+    "size": 6,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 4,
+        "score": 1320,
+        "size": 6,
+        "weight": 220
+      }
+    ],
+    "weight": 220
+  },
+  {
+    "id": 2,
+    "score": 1320,
+    "size": 6,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 14,
+        "score": 1320,
+        "size": 6,
+        "weight": 220
+      }
+    ],
+    "weight": 220
+  },
+  {
+    "id": 3,
+    "score": 1230,
+    "size": 7,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 9,
+        "score": 1050,
+        "size": 5,
+        "weight": 210
+      },
+      {
+        "added": true,
+        "id": 5,
+        "score": 180,
+        "size": 2,
+        "weight": 90
+      }
+    ],
+    "weight": 300
+  },
+  {
+    "id": 4,
+    "score": 1000,
+    "size": 5,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 1,
+        "score": 1000,
+        "size": 5,
+        "weight": 200
+      }
+    ],
+    "weight": 200
+  },
+  {
+    "id": 5,
+    "score": 1000,
+    "size": 5,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 7,
+        "score": 1000,
+        "size": 5,
+        "weight": 200
+      }
+    ],
+    "weight": 200
+  },
+  {
+    "id": 6,
+    "score": 900,
+    "size": 5,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 13,
+        "score": 900,
+        "size": 5,
+        "weight": 180
+      }
+    ],
+    "weight": 180
+  },
+  {
+    "id": 7,
+    "score": 1210,
+    "size": 7,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 10,
+        "score": 760,
+        "size": 4,
+        "weight": 190
+      },
+      {
+        "added": true,
+        "id": 2,
+        "score": 450,
+        "size": 3,
+        "weight": 150
+      }
+    ],
+    "weight": 340
+  },
+  {
+    "id": 8,
+    "score": 1140,
+    "size": 7,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 3,
+        "score": 720,
+        "size": 4,
+        "weight": 180
+      },
+      {
+        "added": true,
+        "id": 8,
+        "score": 420,
+        "size": 3,
+        "weight": 140
+      }
+    ],
+    "weight": 320
+  },
+  {
+    "id": 9,
+    "score": 1010,
+    "size": 7,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 12,
+        "score": 680,
+        "size": 4,
+        "weight": 170
+      },
+      {
+        "added": true,
+        "id": 15,
+        "score": 330,
+        "size": 3,
+        "weight": 110
+      }
+    ],
+    "weight": 280
+  },
+  {
+    "id": 10,
+    "score": 640,
+    "size": 4,
+    "tomatoes": [
+      {
+        "added": true,
+        "id": 6,
+        "score": 640,
+        "size": 4,
+        "weight": 160
+      }
+    ],
+    "weight": 160
+  }
+]

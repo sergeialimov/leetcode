@@ -1,25 +1,11 @@
 /* eslint-disable no-multiple-empty-lines */
 /* eslint-disable no-trailing-spaces */
-import { testTomatoesShort } from './test-tomatoes.mjs';
+import { testTomatoesShort, testTomatoesLong, bucketCapacity } from './constants.mjs';
+import { calculateScore } from './utils.mjs';
+import * as fs from 'node:fs/promises';
 
-const bucketLimits = {
-  size: 7,
-  weight: 400,
-  score: 1500,
-}
-
-function calculateScore () {
-  const res = testTomatoesShort.map((tomato) => ({
-    ...tomato,
-    score: tomato.size * tomato.weight,
-  }));
-  console.log('-- res', res);
-  return res;
-}
-
-const tomatoesWithScores = calculateScore();
+const tomatoesWithScores = calculateScore(testTomatoesLong);
 const sortedByScore = tomatoesWithScores.sort((a, b) => b.score - a.score);
-// console.log('-- sortedByScore', sortedByScore);
 
 function putToBuckets (tomatoes) {
   const res = [];
@@ -36,9 +22,9 @@ function putToBuckets (tomatoes) {
 
     tomatoes.forEach((tomato) => {
       if (
-        bucket.score + tomato.score <= bucketLimits.score &&
-        bucket.size + tomato.size <= bucketLimits.size &&
-        bucket.weight + tomato.weight <= bucketLimits.weight &&
+        bucket.score + tomato.score <= bucketCapacity.score &&
+        bucket.size + tomato.size <= bucketCapacity.size &&
+        bucket.weight + tomato.weight <= bucketCapacity.weight &&
         !tomato.added
       ) {
         bucket.tomatoes.push(tomato);
@@ -56,4 +42,6 @@ function putToBuckets (tomatoes) {
 }
 
 const res = putToBuckets(tomatoesWithScores);
-console.log('-- res', res);
+// console.log('-- res', res);
+// console.log('--res', JSON.stringify(res, null, 2));
+fs.writeFile('/Users/dev/projects/dev/challenges/unsolved/farmer/result/buckets-2.json', JSON.stringify(res));

@@ -22,3 +22,23 @@ export const testTomatoesShort = [
   { id: 3, weight: 180, size: 4, added: false },
   { id: 4, weight: 90, size: 2, added: false }
 ];
+
+export const tomatoesWithScore = [
+  { id: 1, weight: 200, size: 5, added: false, score: 1000 },
+  { id: 2, weight: 90, size: 2, added: false, score: 180 },
+  { id: 3, weight: 180, size: 4, added: false, score: 720 },
+  { id: 4, weight: 90, size: 2, added: false, score: 180 }
+]
+
+export const sortedByScore = [
+  { id: 1, weight: 200, size: 5, added: false, score: 1000 },
+  { id: 3, weight: 180, size: 4, added: false, score: 720 },
+  { id: 2, weight: 90, size: 2, added: false, score: 180 },
+  { id: 4, weight: 90, size: 2, added: false, score: 180 }
+]
+
+export const bucketCapacity = {
+  size: 7,
+  weight: 400,
+  score: 1500,
+}
