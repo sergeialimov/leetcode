@@ -15,6 +15,12 @@ export const testTomatoesLong = [
   { id: 14, weight: 220, size: 6 },
   { id: 15, weight: 110, size: 3 }
 ];
+export const testTomatoes = [
+  { id: 1, weight: 200, size: 5 },
+  { id: 2, weight: 90, size: 2, },
+  { id: 3, weight: 180, size: 4 },
+  { id: 4, weight: 90, size: 2 }
+];
 
 export const testTomatoesShort = [
   { id: 1, weight: 200, size: 5, added: false },
