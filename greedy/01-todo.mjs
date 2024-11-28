@@ -1,17 +1,29 @@
-/* eslint-disable no-multiple-empty-lines */
-/* eslint-disable no-trailing-spaces */
-const things = [5,3,4,2,1];
-const limit = 6;
-things.sort();
+/**
+ *
+ *
+ *
+ * @param things
+ * @param limit
+ * @returns {number}
+ */
+function countNumberOfThings (things, limit) {
+  things.sort();
+  console.log(things);
 
+  let numberOfThing = 0;
 
-let numberOfThing = 0;
+  let index = 0;
+  while (index <= things.length && numberOfThing + things[index + 1] <= limit) {
+    numberOfThing += things[index];
+    index++;
+  }
 
-let index = 0;
-while (index + 1 < things.length && numberOfThing + things[index + 1] <= limit) {
-  numberOfThing += things[index];
-  index++;
+  return numberOfThing;
 }
 
 
-console.log('--numberOfThing', numberOfThing);
+const limit = 6;
+const things = [5,3,4,2,1];
+const res = countNumberOfThings(things, limit);
+
+console.log('--res', res);

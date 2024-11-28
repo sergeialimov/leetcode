@@ -195,9 +195,9 @@
       "files": ["*"],
       "rules": {
         "eol-last": "error",
-        "no-trailing-spaces": "error",
+        "no-trailing-spaces": "off",
         "no-multiple-empty-lines": [
-          "error",
+          "off",
           { "max": 1, "maxBOF": 0, "maxEOF": 0 }
         ]
       }
