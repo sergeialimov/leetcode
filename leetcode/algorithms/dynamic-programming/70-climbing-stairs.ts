@@ -15,22 +15,18 @@ function climbStairs (n: number): number {
 
 
   let numOfStepsNumMinus1 = 1;
-  let numOfStepsNumMinus2 = 0;
+  let numOfStepsNumMinus2 = 1;
 
-  let result = 0;
+  let numberOfSteps = 0;
 
-  for (let i = 0; i < n; i++) {
-    const numberOfSteps = numOfStepsNumMinus2 + numOfStepsNumMinus1;
+  for (let i = 2; i <= n; i++) {
+    numberOfSteps = numOfStepsNumMinus2 + numOfStepsNumMinus1;
 
     numOfStepsNumMinus2 = numOfStepsNumMinus1;
     numOfStepsNumMinus1 = numberOfSteps;
-
-    if (i + 1 === n) {
-      result = numberOfSteps;
-    }
   }
 
-  return result;
+  return numberOfSteps;
 };
 
 
