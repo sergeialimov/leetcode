@@ -1,16 +1,17 @@
 # learning plan
                          
 ## context
-https://chatgpt.com/share/674996f6-6064-8002-973f-67bc6636355a
+[chatgpt thread](https://chatgpt.com/share/674996f6-6064-8002-973f-67bc6636355a)
 
 ## dynamic programming
 
 ### theory
-[] https://www.geeksforgeeks.org/dynamic-programming/
+[geekforgeeks](https://www.geeksforgeeks.org/dynamic-programming/)
 
 
 ### practice
-[] 70. Climbing Stairs
+[v] 70. Climbing Stairs
+
 [] 118. Pascal's Triangle
 [] 119. Pascal's Triangle II
 [] 121. Best Time to Buy and Sell Stock
