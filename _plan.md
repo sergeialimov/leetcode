@@ -11,9 +11,9 @@
 
 ### practice
 [v] 70. Climbing Stairs
+[v] 118. Pascal's Triangle
+[v] 119. Pascal's Triangle II
 
-[] 118. Pascal's Triangle
-[] 119. Pascal's Triangle II
 [] 121. Best Time to Buy and Sell Stock
 [] 338. Counting Bits
 [] 392. Is Subsequence
