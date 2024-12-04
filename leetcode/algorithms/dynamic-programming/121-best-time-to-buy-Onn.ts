@@ -1,3 +1,4 @@
+import { testPrices } from './prices';
 /**
  * 121. Best Time to Buy and Sell Stock
  * Easy
@@ -11,13 +12,25 @@
  * @param prices
  */
 function maxProfit (prices: number[]): number {
-  const maxProfit = 0;
-  let dayIndex = 0;
+  let maxProfit = 0;
 
-  return dayIndex;
+  for (let i = 0; i < prices.length - 1; i++) {
+    const day1 = prices[i];
+    for (let j =  i + 1; j < prices.length; j++) {
+      const day2 = prices[j];
+      const profitTmp = day2 - day1;
+      if (profitTmp > maxProfit) {
+        maxProfit = profitTmp;
+      }
+    }
+  }
+
+  return maxProfit;
 };
 
 
 
-const res = maxProfit([ 7,1,5,3,6,4 ]);
+// const res = maxProfit([ 7,6,4,3,1 ]);
+// const res = maxProfit([ 7,1,5,3,6,4 ]);
+const res = maxProfit(testPrices);
 console.log(res);
