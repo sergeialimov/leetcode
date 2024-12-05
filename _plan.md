@@ -8,13 +8,17 @@
 ### theory
 [geekforgeeks](https://www.geeksforgeeks.org/dynamic-programming/)
 
+### leetcode
+[leetcode](https://leetcode.com/problem-list/dynamic-programming/?difficulty=EASY)
+
+
 
 ### practice
 [v] 70. Climbing Stairs
 [v] 118. Pascal's Triangle
 [v] 119. Pascal's Triangle II
+[v] 121. Best Time to Buy and Sell Stock
 
-[] 121. Best Time to Buy and Sell Stock
 [] 338. Counting Bits
 [] 392. Is Subsequence
 [] 509. Fibonacci Number
