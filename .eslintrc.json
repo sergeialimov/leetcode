@@ -144,7 +144,8 @@
           "always",
           { "arraysInArrays": false, "objectsInArrays": false }
         ],
-        "curly": ["error", "all"],
+        "curly": ["off"],
+//        "curly": ["error", "all"],
         "object-curly-newline": [
           "error",
           { "minProperties": 5, "multiline": true }

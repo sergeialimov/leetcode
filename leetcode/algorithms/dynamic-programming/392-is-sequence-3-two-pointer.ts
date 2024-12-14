@@ -6,20 +6,20 @@
  * A subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
  */
 function isSubsequence (s: string, t: string): boolean {
-  let start = 0;
-  let finish = t.length - 1;
+  let i = 0;
+  if (!s) return true;
 
-  for (let i = 0; i < s.length; i++) {
-    const el1 = s[start];
-    const el2 = s[finish];
-    
+  for (let j = 0; j < t.length; j++) {
+    const elS = s[i];
+    const elT = t[j];
 
-
-    start++;
-    finish--;
+    if (elS === elT) {
+      if (i === s.length - 1) return true;
+      i++;
+    }
   }
 
-  return true;
+  return false;
 }
 
 
