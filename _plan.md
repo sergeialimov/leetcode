@@ -18,10 +18,10 @@
 [v] 118. Pascal's Triangle
 [v] 119. Pascal's Triangle II
 [v] 121. Best Time to Buy and Sell Stock
+[v] 338. Counting Bits
+[v] 392. Is Subsequence
+[v] 509. Fibonacci Number
 
-[] 338. Counting Bits
-[] 392. Is Subsequence
-[] 509. Fibonacci Number
 [] 746. Min Cost Climbing Stairs
 [] 1025. Divisor Game
 [] 1137. N-th Tribonacci Number
