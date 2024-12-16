@@ -8,18 +8,16 @@
 function tribonacci (n: number): number {
   const resultsArr = [ 0, 1, 1 ];
   if (n === 0 || n === 1) return resultsArr[n];
+  if (n === 2) return 1;
 
-  let totalRes = 0;
   let res: number;
-  for (let i = 2; i <= n; i++) {
+  for (let i = 3; i <= n; i++) {
     res = resultsArr[i - 3] + resultsArr[i - 2] + resultsArr[i - 1];
-    totalRes += res;
     resultsArr.push(res);
   }
-
-  return totalRes;
+  return res;
 };
 
 
-const res = tribonacci(4);
+const res = tribonacci(25);
 console.log(res);
