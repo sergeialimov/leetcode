@@ -13,7 +13,7 @@ function fib (n: number): number {
     resultsArr.push(res);
   }
 
-  return res;
+  return totalRes;
 };
 
 
