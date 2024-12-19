@@ -21,8 +21,8 @@
 [v] 338. Counting Bits
 [v] 392. Is Subsequence
 [v] 509. Fibonacci Number
+[v] 746. Min Cost Climbing Stairs
 
-[] 746. Min Cost Climbing Stairs
 [] 1025. Divisor Game
 [] 1137. N-th Tribonacci Number
 [] 1668. Maximum Repeating Substring

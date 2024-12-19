@@ -8,20 +8,34 @@
  * You can either start from the step with index 0, or the step with index 1.
  *
  * Return the minimum cost to reach the top of the floor.
+ *
+ * Time complexity: O(n)
+ * Space complexity: O(1)
 */
 function minCostClimbingStairs (cost: number[]): number {
-  const el0 = cost[0];
-  const el1 = cost[1];
-  const el2 = cost[2];
+  let prev1 = cost[1];
+  let prev2 = cost[0];
 
-  const way1 = el0 + el2;
-  const way2 = el1;
+  for (let i = 2; i <= cost.length; i++) {
 
-  return way1 < way2 ? way1 : way2;
+    // handle last step
+    if (i === cost.length) {
+      return Math.min(prev1, prev2);
+    }
+
+    // handle normal step
+    const currentBestStep = Math.min(prev1, prev2) + cost[i];
+
+    prev2 = prev1;
+    prev1 = currentBestStep;
+  }
+  return Math.min(prev1, prev2);
 };
 
 
 // const res = minCostClimbingStairs([ 10, 15, 20 ]);
+// const res = minCostClimbingStairs([ 1,100,1,1,1,100,1,1,100,1 ]);
+// const res = minCostClimbingStairs([ 0,1,2,2 ]);
 // const res = minCostClimbingStairs([ 10, 20, 15 ]);
 const res = minCostClimbingStairs([ 10, 20, 9 ]);
 console.log(res);
